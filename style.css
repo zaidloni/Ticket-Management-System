@@ -1,0 +1,210 @@
+/* Reset  */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Main container */
+.toolbox-container {
+  height: 5rem;
+  background-color: #4b4b4b;
+  display: flex;
+  align-items: center;
+}
+/* Priority Container  */
+.toolbox-priority-container {
+  margin-left: 4rem;
+  height: 3.5rem;
+  width: 16rem;
+  background-color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+}
+/* Priority container elements */
+.color {
+  height: 1.3rem;
+  width: 3rem;
+  background: #000;
+  border-radius: 2px;
+}
+/* Priority container elements hover effect*/
+.color:hover {
+  transform: scale(1.2);
+  color: lightcoral;
+  cursor: pointer;
+}
+/* Individual element color */
+.pink {
+  background-color: lightpink;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+.black {
+  background-color: black;
+}
+
+/* Action button container */
+.action-btn-container {
+  margin-left: 4rem;
+  height: 3.5rem;
+  width: 8rem;
+  /* background-color: #3d3d3d; */
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+}
+/* Action button container element*/
+.action-btn-container div {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  height: 50%;
+  color: #d1d8e0;
+  width: 100%;
+}
+/* Action button container element hover effect*/
+.action-btn-container div:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: lightcoral;
+}
+.action-btn-container .add-btn {
+  margin-bottom: 1.5rem;
+}
+/* Modal Container */
+.modal-container {
+  display: flex;
+  height: 50vh;
+  width: 45vw;
+  position: absolute;
+  background-color: lightblue;
+  top: calc((100vh - 50vh) / 2);
+  left: calc((100vw - 45vw) / 2);
+}
+/* Use to toggle the visibility of modal Container */
+.hide {
+  display: none;
+}
+/* Textarea */
+textarea {
+  height: 100%;
+  width: 75%;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: #d2dae2;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+/* Color Container */
+.priority-color-container {
+  height: 100%;
+  width: 25%;
+  background-color: #4b4b4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Color container elements */
+.priority-color {
+  height: 3rem;
+  width: 55%;
+}
+.priority-color:hover {
+  transform: scale(1.15);
+}
+/* To show which color is selected in color container element */
+.active {
+  border: 5px solid wheat;
+}
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+/* Ticket Container */
+.ticket-container {
+  height: 13rem;
+  width: 16rem;
+  background-color: #f1f2f6;
+}
+/* Ticket Container Color Element */
+.ticket-color {
+  height: 1rem;
+}
+/* Ticket Container Id Element */
+.ticket-id {
+  font-size: 1.1rem;
+  height: 2rem;
+  padding: 0.4rem;
+}
+/* Ticket Container text Element */
+.ticket-text {
+  font-size: 1.5rem;
+  height: calc(100% - 3rem - 2rem);
+  padding: 0.4rem;
+  outline: none;
+  border: none;
+}
+/* Ticket Bottom Container */
+.ticket-bottom {
+  display: flex;
+  height: 2rem;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  color: #a5b1c2;
+}
+/* Ticket bottom elements */
+.ticket-bottom i {
+  margin-left: 1rem;
+}
+/* Ticket bottom elements hover effet*/
+.ticket-bottom i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 440px) {
+  .modal-container {
+    width: 65vw;
+    top: calc((100vh - 35vh) / 2);
+    left: calc((100vw - 65vw) / 2);
+  }
+  .toolbox-priority-container {
+    margin-left: 1rem;
+  }
+  .color {
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 377px) {
+  .modal-container {
+    width: 65vw;
+    height: 35vh;
+    top: calc((100vh - 35vh) / 2);
+    left: calc((100vw - 65vw) / 2);
+  }
+  .toolbox-priority-container {
+    margin-left: 1rem;
+  }
+  .color {
+    width: 2rem;
+  }
+}
