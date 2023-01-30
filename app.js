@@ -3,6 +3,7 @@ const modalContainerEl = document.querySelector(".modal-container");
 const mainContainerEl = document.querySelector(".main-container");
 const textAreaEl = document.getElementsByTagName("textarea")[0];
 const priorityColorsEl = document.querySelectorAll(".priority-color");
+
 const toolBoxColors = document.querySelectorAll(".color");
 let color = ["pink", "blue", "green", "black"];
 let modalPriorityColor = color[3];
