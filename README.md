@@ -7,6 +7,7 @@ Responsive ticket management system where :
 - edit the ticket
 - change priority of the ticket
 - filter ticket based on the priority
+- all the data is saved in the local Storage
 
 ### Tech Stack Used:
 **HTML, CSS, JS**
